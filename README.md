@@ -92,7 +92,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 🧩 cpp-dotnet / Sharp Runtime — foundation library
+### 🧩 Sharp Runtime — foundation library
 
 🔗 https://github.com/openeggbert/sharp-runtime
 
