@@ -1,106 +1,134 @@
 # 👋 Robert Vokáč — C++ Systems Engineer
 
-**Modern C++ · Systems design · Backend platforms · Engine architecture**
+**Modern C++ · Systems design · Runtime systems · Compatibility layers**
 
 ---
 
 ## 🚀 Focus
 
-C++ developer focused on **system-level engineering**, **backend architecture**, and **framework design**.
+C++ developer focused on **system-level engineering**, **runtime design**, and **compatibility layers**.
 
 Looking for roles in:
 
 * C++ systems engineering
-* backend/platform development
-* framework or engine architecture
+* runtime / framework development
+* backend / platform architecture
+* game technology / engine tooling
 
 ---
 
 ## 🧠 What I build
 
-I design and implement **framework-oriented systems** in modern C++, focusing on:
+I design and implement **runtime systems and compatibility layers** in modern C++, focusing on:
 
-* modular architecture
 * explicit API design
-* extensibility and long-term maintainability
-* system boundaries and abstraction layers
+* system behavior reproduction
+* modular architecture
+* cross-platform execution (SDL3-based)
+* long-term maintainability
 
+Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 ---
 
 ## 🔥 Main Projects
 
-### 🥇 Mind-Net — C++ backend platform
-
-🔗 https://github.com/robertvokac/mind-net
-
-* 40k+ LOC **metadata-driven backend system in C++**
-* custom ORM, migrations, REST API generator
-* plugin architecture (models, triggers, jobs, queries)
-* scheduler + event-driven automation
-* SQLite + system-level architecture
-
-➡️ Focus: **backend systems, platform design, extensible architecture**
-
----
-
-### 🥈 CNA — Real-time rendering engine
+### 🥇 CNA — C++ runtime (XNA 4.0 reimplementation)
 
 🔗 https://github.com/openeggbert/cna
 
-* cross-platform C++ framework inspired by XNA
-* rendering abstraction over SDL3
-* resource management and API design
-* engine-style architecture
+* custom C++ runtime reproducing XNA 4.0 behavior
+* rendering, input, audio, resource lifecycle
+* abstraction over SDL3 / OpenGL / bgfx
+* runs real-world game (Speedy Blupi, 2013)
 
-➡️ Focus: **low-level systems, rendering, runtime design**
+➡️ Focus: **runtime systems, engine architecture, API compatibility**
 
 ---
 
-### ⚙️ easy-gl — Rendering infrastructure
+### 🥈 Free Direct — DirectX 3 (2D) compatibility layer
+
+🔗 https://github.com/openeggbert/free-direct
+
+* reimplementation of DirectDraw / DirectSound subset
+* CPU surface model, blitting, palettes, color keys
+* SDL3 backend (cross-platform)
+
+➡️ Focus: **low-level graphics systems, legacy API compatibility**
+
+---
+
+### 🥉 Free API — WinAPI compatibility layer
+
+🔗 https://github.com/openeggbert/free-api
+
+* WinAPI-style windowing, message loop, timers, input
+* SDL3-based implementation (Linux / cross-platform)
+* designed to run legacy Windows applications without Windows
+
+➡️ Focus: **system APIs, OS abstraction, runtime behavior**
+
+---
+
+### 🧠 Hive (archived) — backend platform
+
+🔗 https://github.com/robertvokac/hive
+
+* 40k+ LOC metadata-driven backend system
+* custom ORM, migrations, REST API generator
+* plugin architecture (models, jobs, triggers, queries)
+* scheduler + event-driven automation
+
+➡️ Focus: **backend systems, platform design, architecture**
+
+---
+
+### ⚙️ easy-gl — rendering infrastructure
 
 🔗 https://github.com/openeggbert/easy-gl
 
-* lightweight OpenGL abstraction layer
-* reusable graphics support code
-* part of rendering/engine ecosystem
+* lightweight graphics abstraction layer
+* reusable rendering support code
+* used in engine/runtime experiments
 
 ---
 
-### 🧩 cpp-dotnet — Foundation library
+### 🧩 cpp-dotnet / Sharp Runtime — foundation library
 
-🔗 https://github.com/openeggbert/cpp-dotnet
+🔗 https://github.com/openeggbert/sharp-runtime
 
 * base system components (events, exceptions, utilities)
-* reusable building blocks for C++ frameworks
+* reusable building blocks for runtime systems
 
 ---
 
-## 🧭 Why I build frameworks
+## 🧭 Why I build runtimes and frameworks
 
-Frameworks force:
+Runtimes and compatibility layers force:
 
-* clear API design
-* separation of concerns
-* explicit ownership and lifecycle
-* reusable abstractions
+* precise API design
+* understanding of system behavior
+* control over execution model
+* clear ownership and lifecycle
+* deep debugging of real-world software
 
 I prefer building systems that are:
 
-> composable, maintainable, and architecture-driven — not just feature-driven
+> behaviorally accurate, modular, and architecture-driven — not just feature-driven
 
 ---
 
 ## 🔄 C++ Transition
 
-After several years in enterprise backend development,
-I shifted toward **system-level engineering and modern C++**.
+After several years in enterprise backend development (Java),
+I transitioned toward **system-level engineering in C++**.
 
-Since my previous work did not involve C++,
-I built my expertise through **real projects**, including:
+Since my previous work did not involve C++ directly,
+I built expertise through **real implementations**, including:
 
-* a 40k+ LOC backend platform
-* a rendering engine and supporting libraries
-* multiple reusable framework components
+* runtime capable of running real games
+* DirectX / WinAPI compatibility layers
+* backend platform (40k+ LOC)
+* multiple reusable system libraries
 
 ---
 
@@ -110,7 +138,7 @@ I built my expertise through **real projects**, including:
 * Linux, CMake, Git
 * SDL3, OpenGL
 * SQLite
-* system architecture, backend design, modular systems
+* runtime systems, compatibility layers, system architecture
 
 ---
 
