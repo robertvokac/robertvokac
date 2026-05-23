@@ -1,4 +1,4 @@
-# 👋 Robert Vokáč — C++ Systems Engineer
+# 👋 Robert Vokáč - C++ Systems Engineer
 
 **Modern C++ · Systems design · Runtime systems · Compatibility layers**
 
@@ -32,7 +32,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ## 🔥 Main Projects
 
-### 🥇 CNA — C++ runtime (XNA 4.0 reimplementation)
+### 🥇 CNA - C++ runtime (XNA 4.0 reimplementation)
 
 🔗 https://github.com/openeggbert/cna
 
@@ -45,7 +45,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 🥈 Free Direct — DirectX 3 (2D) compatibility layer
+### 🥈 Free Direct - DirectX 3 (2D) compatibility layer
 
 🔗 https://github.com/openeggbert/free-direct
 
@@ -57,7 +57,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 🥉 Free API — WinAPI compatibility layer
+### 🥉 Free API - WinAPI compatibility layer
 
 🔗 https://github.com/openeggbert/free-api
 
@@ -69,7 +69,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 🧠 Hive (archived) — backend platform
+### 🧠 Hive (archived) - backend platform
 
 🔗 https://github.com/robertvokac/hive
 
@@ -82,7 +82,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### ⚙️ easy-gl — rendering infrastructure
+### ⚙️ easy-gl - rendering infrastructure
 
 🔗 https://github.com/openeggbert/easy-gl
 
@@ -92,7 +92,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 🧩 Sharp Runtime — foundation library
+### 🧩 Sharp Runtime - foundation library
 
 🔗 https://github.com/openeggbert/sharp-runtime
 
