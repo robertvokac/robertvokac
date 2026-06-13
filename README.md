@@ -62,7 +62,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 🥈 Free Direct — DirectX 3 (2D) compatibility layer
 
-🔗 https://github.com/openeggbert/free-direct
+🔗 https://github.com/openeggbert/free-direct · 🌐 https://freedirect.openeggbert.com
 
 * reimplementation of DirectDraw / DirectSound subset over SDL3
 * CPU surface model, blitting, palettes, color keys, locking, presentation
@@ -74,7 +74,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 🥉 Free API — WinAPI compatibility layer
 
-🔗 https://github.com/openeggbert/free-api
+🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com
 
 * WinAPI-style windowing, message loop, input, timers, multimedia APIs
 * SDL3-based implementation (Linux / cross-platform)
@@ -86,7 +86,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### easy-gl — OpenGL/OpenGL ES rendering wrapper
 
-🔗 https://github.com/openeggbert/easy-gl
+🔗 https://github.com/openeggbert/easy-gl · 🌐 https://easygl.openeggbert.com
 
 * toolkit-independent C++20 OpenGL/OpenGL ES wrapper
 * host owns window and GL context; easy-gl owns all OpenGL interaction
@@ -96,7 +96,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### meta-gl — low-level OpenGL function loader
 
-🔗 https://github.com/openeggbert/meta-gl
+🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com
 
 * type-safe C++23 OpenGL ES 2.0+ function loader
 * runtime loading via host-supplied `GetProcAddress` — no windowing, no context creation
@@ -106,7 +106,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### Sharp Runtime — C#/.NET subset in native C++
 
-🔗 https://github.com/openeggbert/sharp-runtime
+🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
@@ -116,7 +116,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### Galaxy Eggbert — 3D game (CNA + Nova3D)
 
-🔗 https://github.com/openeggbert/galaxy-eggbert
+🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com
 
 * 3D remake of Speedy Blupi validating the full CNA + Nova3D engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
@@ -125,7 +125,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### Mesh Craft — 3D modeler
 
-🔗 https://github.com/openeggbert/mesh-craft
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft.openeggbert.com
 
 * 3D modeling tool built on CNA + Nova3D + sharp-runtime
 * primitive shapes, CSG operations, materials, textures
