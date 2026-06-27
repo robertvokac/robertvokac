@@ -36,7 +36,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 🥇 CNA — C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com
+🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
@@ -50,7 +50,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### Nova3D — 3D engine (Urho3D source + CNA backends)
 
-🔗 https://github.com/openeggbert/nova-3d · 🌐 https://libnova3d.com
+🔗 https://github.com/openeggbert/nova-3d · 🌐 https://libnova3d.com · 🌐 https://nova3d.openeggbert.com
 
 * Urho3D scene/math/resource system with CNA replacing native graphics backends
 * public API is `namespace Urho3D` — game code compiles against Nova3D with minimal changes
@@ -110,7 +110,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
-* foundation layer for CNA, Nova3D, Mesh Craft, and Galaxy Eggbert
+* foundation layer for CNA, Nova3D, Mesh Craft, Mesh World, and Galaxy Eggbert
 
 ---
 
@@ -123,13 +123,26 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### Mesh Craft — 3D modeler
+### Mesh Craft — 3D scene editor
 
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft.openeggbert.com
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com
 
-* 3D modeling tool built on CNA + Nova3D + sharp-runtime
-* primitive shapes, CSG operations, materials, textures
-* native `.mc3` format (YAML-based) compiled to glTF/GLB
+* 3D scene editor for the `.mc3.xml` format — primitive shapes, CSG (union/difference/intersection via Manifold), materials, PBR textures, animation
+* native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
+* built on CNA + Nova3D + sharp-runtime; exercises the full C++ engine stack as a real editor application
+* Early prototype — project structure, core class skeletons, and MC3 library in place
+
+---
+
+### Mesh World — procedural 3D world generator
+
+🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com
+
+* generates infinite 3D city and landscape chunks from a JSON config — 20 C++ chunk generators + 17 Lua object generators
+* Lua scripting sandbox (sol2 + Lua 5.4) for content modding; auto-discovered at startup
+* SQLite content packs: taxonomy registry, material registry, generator bundles in portable `.sqlite` files
+* real-time 3D explorer (MeshWorldApp) built on Mesh Craft + CNA (SDL3/OpenGL)
+* 119 tests passing, zero warnings, CI on every push
 
 ---
 
