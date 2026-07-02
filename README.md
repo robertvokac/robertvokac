@@ -48,18 +48,6 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### Nova3D — 3D engine (Urho3D source + CNA backends)
-
-🔗 https://github.com/openeggbert/nova-3d · 🌐 https://libnova3d.com · 🌐 https://nova3d.openeggbert.com
-
-* Urho3D scene/math/resource system with CNA replacing native graphics backends
-* public API is `namespace Urho3D` — game code compiles against Nova3D with minimal changes
-* architecture: game code → Nova3D API → scene/renderer → CNA (SDL3 / OpenGL / OpenGL ES)
-
-➡️ Focus: **3D engine architecture, rendering abstraction, API layering**
-
----
-
 ### 🥈 Free Direct — DirectX 3 (2D) compatibility layer
 
 🔗 https://github.com/openeggbert/free-direct · 🌐 https://freedirect.openeggbert.com
@@ -110,15 +98,15 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
-* foundation layer for CNA, Nova3D, Mesh Craft, Mesh World, and Galaxy Eggbert
+* foundation layer for CNA, Mesh Craft, Mesh World, and Galaxy Eggbert
 
 ---
 
-### Galaxy Eggbert — 3D game (CNA + Nova3D)
+### Galaxy Eggbert — 3D game (CNA)
 
 🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com
 
-* 3D remake of Speedy Blupi validating the full CNA + Nova3D engine stack
+* 3D remake of Speedy Blupi validating the full CNA engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
 
 ---
@@ -129,7 +117,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 * 3D scene editor for the `.mc3.xml` format — primitive shapes, CSG (union/difference/intersection via Manifold), materials, PBR textures, animation
 * native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
-* built on CNA + Nova3D + sharp-runtime; exercises the full C++ engine stack as a real editor application
+* built on CNA + sharp-runtime; exercises the full C++ engine stack as a real editor application
 * Early prototype — project structure, core class skeletons, and MC3 library in place
 
 ---
