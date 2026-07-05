@@ -239,7 +239,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 20. Lexicon — desktop knowledge dictionary
 
-🔗 https://github.com/robertvokac/lexicon · 📏 ≈2.8k LOC
+🔗 https://github.com/robertvokac/lexicon · 🌐 https://lexicon.robertvokac.com · 📏 ≈2.8k LOC
 
 * desktop knowledge dictionary for structured technical notes (C++23, Qt 6 Widgets, SQLite)
 * typed term relationships with backlinks, Markdown content with live preview, full-text search
