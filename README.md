@@ -30,7 +30,7 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 
 Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
 
-**≈282k lines of C++** across the projects below.¹
+**≈356k lines of C++** across the projects below.¹
 
 ---
 
@@ -38,7 +38,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 1. Mesh Craft — 3D scene editor
 
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈16.5k LOC
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈18.1k LOC
 
 * C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
 * native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
@@ -51,7 +51,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 2. Mesh World — procedural 3D world generator
 
-🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈8.6k LOC
+🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈12.7k LOC
 
 * generates infinite 3D city and landscape chunks from a JSON config — 20 C++ chunk generators + 17 Lua object generators
 * Lua scripting sandbox (sol2 + Lua 5.4) for content modding; auto-discovered at startup
@@ -63,11 +63,11 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 3. CNA — C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈61.5k LOC
+🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈76.9k LOC
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
-* backends: SDL3 / OpenGL (easy-gl) / bgfx
+* backends: SDL3 / OpenGL (easy-gl) / Vulkan / bgfx
 * one codebase targets Windows, Linux, WebAssembly, and Android
 * used to port a real C# / XNA game (Speedy Blupi, 2013)
 
@@ -77,7 +77,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 4. CNA Samples — XNA sample collection ported to C++
 
-🔗 https://github.com/openeggbert/cna-samples · 📏 ≈32.3k LOC
+🔗 https://github.com/openeggbert/cna-samples · 📏 ≈48.0k LOC
 
 * C++ ports of the official Microsoft XNA Game Studio 4.0 sample collection, running on CNA
 * a continuously growing compatibility test bed proving the framework's API coverage on real code
@@ -85,9 +85,20 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 5. Sharp Runtime — C#/.NET subset in native C++
+### 5. CNA Craft — voxel world prototype on CNA
 
-🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈36.4k LOC
+🔗 https://github.com/openeggbert/cna-craft · 📏 ≈4.0k LOC
+
+* Minecraft-like first-person voxel-world prototype built directly on CNA's `Microsoft::Xna::Framework` API
+* unbounded chunk-streamed block terrain, noise-based procedural generation, hidden-face-culled cube meshing, block texture atlas
+* DDA voxel raycast for block breaking/placing; SQLite delta-based world persistence
+* runs on CNA's OpenGL, Vulkan, and bgfx backends — in active development
+
+---
+
+### 6. Sharp Runtime — C#/.NET subset in native C++
+
+🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈64.6k LOC
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
@@ -95,9 +106,9 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 6. Free Direct — DirectX 3 (2D) compatibility layer
+### 7. Free Direct — DirectX 3 (2D) compatibility layer
 
-🔗 https://github.com/openeggbert/free-direct · 🌐 https://freedirect.openeggbert.com · 🎮 [Speedy Eggbert 2 demo](https://speedyblupi.com/SpeedyEggbert2/) · 🎮 [Planet Blupi demo](https://speedyblupi.com/PlanetBlupi/) · 📏 ≈3.2k LOC
+🔗 https://github.com/openeggbert/free-direct · 🌐 https://freedirect.openeggbert.com · 🎮 [Speedy Eggbert 2 demo](https://speedyblupi.com/SpeedyEggbert2/) · 🎮 [Planet Blupi demo](https://speedyblupi.com/PlanetBlupi/) · 📏 ≈4.3k LOC
 
 * reimplementation of DirectDraw / DirectSound subset over SDL3
 * CPU surface model, blitting, palettes, color keys, locking, presentation
@@ -107,9 +118,9 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 7. Free API — WinAPI compatibility layer
+### 8. Free API — WinAPI compatibility layer
 
-🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com · 📏 ≈4.1k LOC
+🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com · 📏 ≈4.4k LOC
 
 * WinAPI-style windowing, message loop, input, timers, multimedia APIs
 * SDL3-based implementation (Linux / cross-platform)
@@ -119,7 +130,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 8. Free Eggbert — Speedy Eggbert 2 reconstruction
+### 9. Free Eggbert — Speedy Eggbert 2 reconstruction
 
 🔗 https://github.com/openeggbert/free-eggbert · 🌐 https://freeeggbert.openeggbert.com · 🎮 [WebAssembly demo (partial)](https://speedyblupi.com/SpeedyEggbert2/) · 📏 ≈28.1k LOC
 
@@ -131,7 +142,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 9. Mobile Eggbert — C++ port of Speedy Blupi (2013)
+### 10. Mobile Eggbert — C++ port of Speedy Blupi (2013)
 
 🔗 https://github.com/openeggbert/mobile-eggbert · 🌐 https://mobileeggbert.openeggbert.com · 🎮 [Play in browser](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈20.5k LOC
 
@@ -141,16 +152,16 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 10. Galaxy Eggbert — 3D game (CNA)
+### 11. Galaxy Eggbert — 3D game (CNA)
 
-🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈5.4k LOC
+🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈8.5k LOC
 
 * 3D remake of Speedy Blupi validating the full CNA engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
 
 ---
 
-### 11. easy-gl — OpenGL/OpenGL ES rendering wrapper
+### 12. easy-gl — OpenGL/OpenGL ES rendering wrapper
 
 🔗 https://github.com/openeggbert/easy-gl · 🌐 https://easygl.openeggbert.com · 📏 ≈3.6k LOC
 
@@ -160,9 +171,9 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 12. easy-3d — 3D helper library for CNA
+### 13. easy-3d — 3D helper library for CNA
 
-🔗 https://github.com/openeggbert/easy-3d · 🌐 https://easy3d.openeggbert.com · 📏 ≈0.7k LOC
+🔗 https://github.com/openeggbert/easy-3d · 🌐 https://easy3d.openeggbert.com · 📏 ≈1.0k LOC
 
 * small C++23 helper library beside CNA — deliberately a library, not an engine
 * cameras (orbit/follow), texture atlas, billboard and cube batching, debug draw
@@ -170,7 +181,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 13. meta-gl — low-level OpenGL function loader
+### 14. meta-gl — low-level OpenGL function loader
 
 🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈7.8k LOC
 
@@ -180,7 +191,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 14. Mobile Eggbert Legacy — C#/MonoGame preservation archive
+### 15. Mobile Eggbert Legacy — C#/MonoGame preservation archive
 
 🔗 https://github.com/openeggbert/mobile-eggbert-legacy
 
@@ -189,7 +200,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 15. Mobile Eggbert LibGDX — Java port
+### 16. Mobile Eggbert LibGDX — Java port
 
 🔗 https://github.com/openeggbert/mobile-eggbert-libgdx
 
@@ -198,7 +209,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 16. Sprite Utils — sprite utilities and assets
+### 17. Sprite Utils — sprite utilities and assets
 
 🔗 https://github.com/openeggbert/sprite-utils · 📏 ≈1.2k LOC
 
@@ -206,7 +217,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 17. YouTube Frontend — static index generator for ArchiveBox
+### 18. YouTube Frontend — static index generator for ArchiveBox
 
 🔗 https://github.com/openeggbert/youtube-frontend · 🌐 https://youtube.openeggbert.com · 📏 ≈1.4k LOC
 
@@ -215,7 +226,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 18. 🧠 Hive — backend platform
+### 19. 🧠 Hive — backend platform
 
 🔗 https://github.com/robertvokac/hive · 🌐 https://hive.robertvokac.com · 📏 ≈45.0k LOC
 
@@ -228,7 +239,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 19. bit-backup — bit rot detection
+### 20. bit-backup — bit rot detection
 
 🔗 https://github.com/robertvokac/bit-backup · 📏 ≈3.1k LOC
 
@@ -237,7 +248,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 20. Lexicon — desktop knowledge dictionary
+### 21. Lexicon — desktop knowledge dictionary
 
 🔗 https://github.com/robertvokac/lexicon · 🌐 https://lexicon.robertvokac.com · 📏 ≈2.8k LOC
 
