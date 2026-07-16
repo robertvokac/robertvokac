@@ -68,7 +68,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
-* 11 rendering backends: SDL_Renderer, OpenGL (easy-gl), Vulkan, bgfx, WebGPU, native Direct3D 9/11/12 (Wine/DXVK-verified), HTML Canvas, ASCII, and a DirectDraw-shaped backend (DX3) fronting Free Direct
+* 12 rendering backends: SDL_Renderer, OpenGL (easy-gl), Vulkan, bgfx, WebGPU, native Direct3D 9/11/12 (Wine/DXVK-verified), SDL_GPU (Vulkan-driven), HTML Canvas, ASCII, and a DirectDraw-shaped backend (DX3) fronting Free Direct
 * one codebase targets Windows, Linux, WebAssembly, and Android
 * used to port a real C# / XNA game (Speedy Blupi, 2013)
 
