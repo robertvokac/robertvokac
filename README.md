@@ -30,7 +30,7 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 
 Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
 
-**≈363k lines of C++** across the projects below.¹
+**≈447k lines of C++** across the projects below.¹
 
 ---
 
@@ -38,7 +38,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 1. Mesh Craft — 3D scene editor
 
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈24.9k LOC
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈28.0k LOC
 
 * C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
 * native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
@@ -51,23 +51,24 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 2. Mesh World — procedural 3D world generator
 
-🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈12.7k LOC
+🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈16.6k LOC
 
-* generates infinite 3D city and landscape chunks from a JSON config — 20 C++ chunk generators + 17 Lua object generators
+* generates infinite 3D city and landscape chunks from a JSON config — 20 C++ chunk generators + 11 Lua object generators
 * Lua scripting sandbox (sol2 + Lua 5.4) for content modding; auto-discovered at startup
+* planetary map subsystem: quadtree LOD 0–18, 52-biome classification, hydrology and mountain-range terrain algorithms
 * SQLite content packs: taxonomy registry, material registry, generator bundles in portable `.sqlite` files
 * real-time 3D explorer (MeshWorldApp) built on Mesh Craft + CNA (SDL3/OpenGL)
-* 119 tests passing, zero warnings, CI on every push
+* 1176 tests passing, zero warnings, CI on every push
 
 ---
 
 ### 3. CNA — C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈76.9k LOC
+🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈138.0k LOC
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
-* backends: SDL3 / OpenGL (easy-gl) / Vulkan / bgfx
+* 11 rendering backends: SDL_Renderer, OpenGL (easy-gl), Vulkan, bgfx, WebGPU, native Direct3D 9/11/12 (Wine/DXVK-verified), HTML Canvas, ASCII, and a DirectDraw-shaped backend (DX3) fronting Free Direct
 * one codebase targets Windows, Linux, WebAssembly, and Android
 * used to port a real C# / XNA game (Speedy Blupi, 2013)
 
@@ -87,18 +88,18 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 5. CNA Craft — voxel world prototype on CNA
 
-🔗 https://github.com/openeggbert/cna-craft · 📏 ≈4.0k LOC
+🔗 https://github.com/openeggbert/cna-craft · 📏 ≈6.3k LOC
 
-* Minecraft-like first-person voxel-world prototype built directly on CNA's `Microsoft::Xna::Framework` API
-* unbounded chunk-streamed block terrain, noise-based procedural generation, hidden-face-culled cube meshing, block texture atlas
-* DDA voxel raycast for block breaking/placing; SQLite delta-based world persistence
-* runs on CNA's OpenGL, Vulkan, and bgfx backends — in active development
+* Minecraft-like first-person voxel-world prototype built directly on CNA's `Microsoft::Xna::Framework` API — a faithful port of fogleman/Craft
+* unbounded chunk-streamed block terrain with baked ambient occlusion, 54-block roster, world-editing commands, signs
+* DDA voxel raycast for block breaking/placing; SQLite delta-based world persistence; multiplayer against its own server
+* runs on CNA's OpenGL (easy-gl), Vulkan, and bgfx backends; playable in the browser via WebAssembly/WebGL2 — in active development
 
 ---
 
 ### 6. Sharp Runtime — C#/.NET subset in native C++
 
-🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈64.6k LOC
+🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈70.7k LOC
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
@@ -154,7 +155,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 11. Galaxy Eggbert — 3D game (CNA)
 
-🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈8.5k LOC
+🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈14.3k LOC
 
 * 3D remake of Speedy Blupi validating the full CNA engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
@@ -211,7 +212,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 17. Sprite Utils — sprite utilities and assets
 
-🔗 https://github.com/openeggbert/sprite-utils · 📏 ≈1.2k LOC
+🔗 https://github.com/openeggbert/sprite-utils · 📏 ≈2.2k LOC
 
 * small C++23 sprite utility library and assets (number spritesheets, web component) supporting the game projects
 
@@ -219,7 +220,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 18. YouTube Frontend — static index generator for ArchiveBox
 
-🔗 https://github.com/openeggbert/youtube-frontend · 🌐 https://youtube.openeggbert.com · 📏 ≈1.4k LOC
+🔗 https://github.com/openeggbert/youtube-frontend · 🌐 https://youtube.openeggbert.com · 📏 ≈2.3k LOC
 
 * C++23 tool that generates static HTML index pages for ArchiveBox video archives
 * uses OpenCV, FFmpeg libraries, and libcurl
