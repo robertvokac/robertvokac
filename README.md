@@ -30,7 +30,7 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 
 Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
 
-**≈447k lines of C++** across the projects below.¹
+**≈495.5k lines of C++** across the projects below.¹
 
 ---
 
@@ -38,7 +38,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 1. Mesh Craft — 3D scene editor
 
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈28.0k LOC
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈29.4k LOC
 
 * C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
 * native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
@@ -51,7 +51,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 2. Mesh World — procedural 3D world generator
 
-🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈16.6k LOC
+🔗 https://github.com/openeggbert/mesh-world · 🌐 https://meshworld3d.com · 🌐 https://meshworld.openeggbert.com · 📏 ≈16.9k LOC
 
 * generates infinite 3D city and landscape chunks from a JSON config — 20 C++ chunk generators + 11 Lua object generators
 * Lua scripting sandbox (sol2 + Lua 5.4) for content modding; auto-discovered at startup
@@ -64,7 +64,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 3. CNA — C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈138.0k LOC
+🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈181.2k LOC
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
@@ -121,7 +121,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 8. Free API — WinAPI compatibility layer
 
-🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com · 📏 ≈4.4k LOC
+🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com · 📏 ≈4.5k LOC
 
 * WinAPI-style windowing, message loop, input, timers, multimedia APIs
 * SDL3-based implementation (Linux / cross-platform)
@@ -155,7 +155,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 11. Galaxy Eggbert — 3D game (CNA)
 
-🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈14.3k LOC
+🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈17.3k LOC
 
 * 3D remake of Speedy Blupi validating the full CNA engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
@@ -184,7 +184,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 14. meta-gl — low-level OpenGL function loader
 
-🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈7.8k LOC
+🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.3k LOC
 
 * type-safe C++23 OpenGL ES 2.0+ function loader
 * runtime loading via host-supplied `GetProcAddress` — no windowing, no context creation
