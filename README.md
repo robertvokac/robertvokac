@@ -30,7 +30,7 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 
 Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
 
-**≈478.6k lines of C++** across the projects below.¹
+**≈611.4k lines of C++** across the projects below.¹
 
 ---
 
@@ -38,7 +38,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 1. Mesh Craft — 3D scene editor
 
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈29.4k LOC
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈41.2k LOC
 
 * C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
 * native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
@@ -51,11 +51,12 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 2. CNA — C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈181.2k LOC
+🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈292.2k LOC
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
-* 12 rendering backends: SDL_Renderer, OpenGL (easy-gl), Vulkan, bgfx, WebGPU, native Direct3D 9/11/12 (Wine/DXVK-verified), SDL_GPU (Vulkan-driven), HTML Canvas, ASCII, and a DirectDraw-shaped backend (DX3) fronting Free Direct
+* restructured into 15 independently buildable modules plus a renderer layer of ~40 backends, each with its own CMake target
+* 46 rendering backends spanning modern APIs (Vulkan, bgfx, WebGPU, native Direct3D 9/10/11/12, SDL_GPU, Metal, Diligent Engine, Sokol), the full legacy DirectX line (DirectX 1–9, Wine/DXVK-verified), desktop and mobile OpenGL/OpenGL ES/OpenVG, and specialty targets (HTML Canvas, SVG, GDI, Glide, headless)
 * one codebase targets Windows, Linux, WebAssembly, and Android
 * used to port a real C# / XNA game (Speedy Blupi, 2013)
 
@@ -86,10 +87,11 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 5. Sharp Runtime — C#/.NET subset in native C++
 
-🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈70.7k LOC
+🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈78.9k LOC
 
 * `System::*` namespaces implemented in idiomatic modern C++
 * covers exceptions, events, delegates, collections, and system-level building blocks
+* restructured into 39 independently selectable modules (41 CMake components)
 * foundation layer for CNA, Mesh Craft, and Galaxy Eggbert
 
 ---
@@ -142,9 +144,9 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 10. Galaxy Eggbert — 3D game (CNA)
 
-🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈17.3k LOC
+🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈18.5k LOC
 
-* 3D remake of Speedy Blupi validating the full CNA engine stack
+* 3D remake of Speedy Blupi validating the full CNA + Easy3D engine stack
 * targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
 
 ---
@@ -171,7 +173,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 13. meta-gl — low-level OpenGL function loader
 
-🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.3k LOC
+🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.9k LOC
 
 * type-safe C++23 OpenGL ES 2.0+ function loader
 * runtime loading via host-supplied `GetProcAddress` — no windowing, no context creation
@@ -245,7 +247,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-¹ *LOC measured with cloc (July 2026): C++ sources and headers (`.cpp`/`.hpp`/`.h`), `src/` and `include/` directories only, excluding tests, vendored, and third-party code.*
+¹ *LOC measured with cloc (August 2026): C++ sources and headers (`.cpp`/`.hpp`/`.h`), `src/` and `include/` directories only, excluding tests, vendored, and third-party code.*
 
 ---
 
