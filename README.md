@@ -30,26 +30,11 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 
 Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
 
-**≈611.4k lines of C++** across the projects below.¹
-
 ---
 
-## 🔥 Projects
+## Projects
 
-### 1. Mesh Craft — 3D scene editor
-
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈41.2k LOC
-
-* C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
-* native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
-* Dear ImGui editor (orbit camera, gizmos, timeline, undo/redo, autosave) built on CNA + sharp-runtime; exercises the full C++ engine stack as a real editor application
-* Actively developed — full XML load/save roundtrip, all primitives, CSG, animation, and GLB export working
-
-➡️ Focus: **3D tooling, file formats, geometry processing, editor UX**
-
----
-
-### 2. CNA — C++ framework (XNA-style API)
+### 1. CNA — C++ framework (XNA-style API)
 
 🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈292.2k LOC
 
@@ -61,6 +46,19 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 * used to port a real C# / XNA game (Speedy Blupi, 2013)
 
 ➡️ Focus: **cross-platform framework, runtime systems, API compatibility**
+
+---
+
+### 2. Mesh Craft — 3D scene editor
+
+🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈41.2k LOC
+
+* C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
+* native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
+* Dear ImGui editor (orbit camera, gizmos, timeline, undo/redo, autosave) built on CNA + sharp-runtime; exercises the full C++ engine stack as a real editor application
+* Actively developed — full XML load/save roundtrip, all primitives, CSG, animation, and GLB export working
+
+➡️ Focus: **3D tooling, file formats, geometry processing, editor UX**
 
 ---
 
