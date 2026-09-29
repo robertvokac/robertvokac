@@ -1,4 +1,4 @@
-# 👋 Robert Vokáč — C++ Systems Engineer
+# 👋 Robert Vokáč - C++ Systems Engineer
 
 **Modern C++ · 3D tooling · Cross-platform frameworks · Compatibility layers · Runtime systems**
 
