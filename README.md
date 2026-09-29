@@ -34,7 +34,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ## Projects
 
-### 1. CNA — C++ framework (XNA-style API)
+### 1. CNA - C++ framework (XNA-style API)
 
 🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈292.2k LOC
 
@@ -49,7 +49,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 2. Mesh Craft — 3D scene editor
+### 2. Mesh Craft - 3D scene editor
 
 🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈41.2k LOC
 
@@ -62,7 +62,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 3. CNA Samples — XNA sample collection ported to C++
+### 3. CNA Samples - XNA sample collection ported to C++
 
 🔗 https://github.com/openeggbert/cna-samples · 📏 ≈48.0k LOC
 
@@ -72,7 +72,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 4. Sharp Runtime — C#/.NET subset in native C++
+### 4. Sharp Runtime - C#/.NET subset in native C++
 
 🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈78.9k LOC
 
@@ -83,7 +83,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 5. Free Eggbert — Speedy Eggbert 2 reconstruction
+### 5. Free Eggbert - Speedy Eggbert 2 reconstruction
 
 🔗 https://github.com/openeggbert/free-eggbert · 🌐 https://freeeggbert.openeggbert.com · 🎮 [WebAssembly demo (partial)](https://speedyblupi.com/SpeedyEggbert2/) · 📏 ≈28.1k LOC
 
@@ -95,7 +95,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 6. Mobile Eggbert — C++ port of Speedy Blupi (2013)
+### 6. Mobile Eggbert - C++ port of Speedy Blupi (2013)
 
 🔗 https://github.com/openeggbert/mobile-eggbert · 🌐 https://mobileeggbert.openeggbert.com · 🎮 [Play in browser](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈20.5k LOC
 
@@ -105,7 +105,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 7. Galaxy Eggbert — 3D game (CNA)
+### 7. Galaxy Eggbert - 3D game (CNA)
 
 🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈18.5k LOC
 
@@ -114,7 +114,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 8. easy-gl — OpenGL/OpenGL ES rendering wrapper
+### 8. easy-gl - OpenGL/OpenGL ES rendering wrapper
 
 🔗 https://github.com/openeggbert/easy-gl · 🌐 https://easygl.openeggbert.com · 📏 ≈3.6k LOC
 
@@ -124,7 +124,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 9. meta-gl — low-level OpenGL function loader
+### 9. meta-gl - low-level OpenGL function loader
 
 🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.9k LOC
 
@@ -134,7 +134,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 10. Mobile Eggbert Legacy — C#/MonoGame preservation archive
+### 10. Mobile Eggbert Legacy - ** C#/MonoGame preservation archive
 
 🔗 https://github.com/openeggbert/mobile-eggbert-legacy
 
@@ -143,16 +143,12 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 11. Lexicon — desktop knowledge dictionary
+### 11. Lexicon - desktop knowledge dictionary
 
 🔗 https://github.com/robertvokac/lexicon · 🌐 https://lexicon.robertvokac.com · 📏 ≈2.8k LOC
 
 * desktop knowledge dictionary for structured technical notes (C++23, Qt 6 Widgets, SQLite)
 * typed term relationships with backlinks, Markdown content with live preview, full-text search
-
----
-
-¹ *LOC measured with cloc (August 2026): C++ sources and headers (`.cpp`/`.hpp`/`.h`), `src/` and `include/` directories only, excluding tests, vendored, and third-party code.*
 
 ---
 
@@ -191,7 +187,7 @@ I built expertise through **real implementations**, including:
 * C++20/23
 * Linux, CMake, Git, GCC / Clang
 * SDL3, OpenGL / OpenGL ES, bgfx, Dear ImGui
-* SQLite, Lua (sol2)
+* SQLite
 * 3D tooling, cross-platform frameworks, compatibility layers, runtime systems, system architecture
 
 ---
