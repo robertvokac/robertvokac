@@ -74,17 +74,6 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 4. CNA Craft — voxel world prototype on CNA
-
-🔗 https://github.com/openeggbert/cna-craft · 📏 ≈6.3k LOC
-
-* Minecraft-like first-person voxel-world prototype built directly on CNA's `Microsoft::Xna::Framework` API — a faithful port of fogleman/Craft
-* unbounded chunk-streamed block terrain with baked ambient occlusion, 54-block roster, world-editing commands, signs
-* DDA voxel raycast for block breaking/placing; SQLite delta-based world persistence; multiplayer against its own server
-* runs on CNA's OpenGL (easy-gl), Vulkan, and bgfx backends; playable in the browser via WebAssembly/WebGL2 — in active development
-
----
-
 ### 5. Sharp Runtime — C#/.NET subset in native C++
 
 🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈78.9k LOC
@@ -93,30 +82,6 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 * covers exceptions, events, delegates, collections, and system-level building blocks
 * restructured into 39 independently selectable modules (41 CMake components)
 * foundation layer for CNA, Mesh Craft, and Galaxy Eggbert
-
----
-
-### 6. Free Direct — DirectX 3 (2D) compatibility layer
-
-🔗 https://github.com/openeggbert/free-direct · 🌐 https://freedirect.openeggbert.com · 🎮 [Speedy Eggbert 2 demo](https://speedyblupi.com/SpeedyEggbert2/) · 🎮 [Planet Blupi demo](https://speedyblupi.com/PlanetBlupi/) · 📏 ≈4.3k LOC
-
-* reimplementation of DirectDraw / DirectSound subset over SDL3
-* CPU surface model, blitting, palettes, color keys, locking, presentation
-* designed to replace original DirectX 3 SDK dependencies in legacy applications
-
-➡️ Focus: **low-level graphics systems, legacy API compatibility**
-
----
-
-### 7. Free API — WinAPI compatibility layer
-
-🔗 https://github.com/openeggbert/free-api · 🌐 https://freeapi.openeggbert.com · 📏 ≈4.5k LOC
-
-* WinAPI-style windowing, message loop, input, timers, multimedia APIs
-* SDL3-based implementation (Linux / cross-platform)
-* works together with Free Direct as the system/platform side of legacy application compatibility
-
-➡️ Focus: **system APIs, OS abstraction, runtime behavior**
 
 ---
 
@@ -190,15 +155,6 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 15. Mobile Eggbert LibGDX — Java port
-
-🔗 https://github.com/openeggbert/mobile-eggbert-libgdx
-
-* Java/LibGDX port of Speedy Blupi (Mobile Eggbert) with a small XNA/.NET compatibility bridge
-* desktop (LWJGL3), Android, and HTML targets
-
----
-
 ### 16. Sprite Utils — sprite utilities and assets
 
 🔗 https://github.com/openeggbert/sprite-utils · 📏 ≈2.2k LOC
@@ -213,19 +169,6 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 * C++23 tool that generates static HTML index pages for ArchiveBox video archives
 * uses OpenCV, FFmpeg libraries, and libcurl
-
----
-
-### 18. 🧠 Hive — backend platform
-
-🔗 https://github.com/robertvokac/hive · 🌐 https://hive.robertvokac.com · 📏 ≈45.0k LOC
-
-* metadata-driven C++23 backend system
-* custom ORM, migrations, REST API generator
-* plugin architecture (models, jobs, triggers, queries)
-* scheduler + event-driven automation
-
-➡️ Focus: **backend systems, platform design, architecture**
 
 ---
 
