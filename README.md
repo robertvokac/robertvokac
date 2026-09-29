@@ -72,7 +72,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 5. Sharp Runtime — C#/.NET subset in native C++
+### 4. Sharp Runtime — C#/.NET subset in native C++
 
 🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈78.9k LOC
 
@@ -83,7 +83,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 8. Free Eggbert — Speedy Eggbert 2 reconstruction
+### 5. Free Eggbert — Speedy Eggbert 2 reconstruction
 
 🔗 https://github.com/openeggbert/free-eggbert · 🌐 https://freeeggbert.openeggbert.com · 🎮 [WebAssembly demo (partial)](https://speedyblupi.com/SpeedyEggbert2/) · 📏 ≈28.1k LOC
 
@@ -95,7 +95,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 9. Mobile Eggbert — C++ port of Speedy Blupi (2013)
+### 6. Mobile Eggbert — C++ port of Speedy Blupi (2013)
 
 🔗 https://github.com/openeggbert/mobile-eggbert · 🌐 https://mobileeggbert.openeggbert.com · 🎮 [Play in browser](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈20.5k LOC
 
@@ -105,7 +105,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 10. Galaxy Eggbert — 3D game (CNA)
+### 7. Galaxy Eggbert — 3D game (CNA)
 
 🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈18.5k LOC
 
@@ -114,7 +114,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 11. easy-gl — OpenGL/OpenGL ES rendering wrapper
+### 8. easy-gl — OpenGL/OpenGL ES rendering wrapper
 
 🔗 https://github.com/openeggbert/easy-gl · 🌐 https://easygl.openeggbert.com · 📏 ≈3.6k LOC
 
@@ -124,17 +124,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 12. easy-3d — 3D helper library for CNA
-
-🔗 https://github.com/openeggbert/easy-3d · 🌐 https://easy3d.openeggbert.com · 📏 ≈1.0k LOC
-
-* small C++23 helper library beside CNA — deliberately a library, not an engine
-* cameras (orbit/follow), texture atlas, billboard and cube batching, debug draw
-* first consumer: Galaxy Eggbert
-
----
-
-### 13. meta-gl — low-level OpenGL function loader
+### 9. meta-gl — low-level OpenGL function loader
 
 🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.9k LOC
 
@@ -144,7 +134,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 14. Mobile Eggbert Legacy — C#/MonoGame preservation archive
+### 10. Mobile Eggbert Legacy — C#/MonoGame preservation archive
 
 🔗 https://github.com/openeggbert/mobile-eggbert-legacy
 
@@ -153,33 +143,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 16. Sprite Utils — sprite utilities and assets
-
-🔗 https://github.com/openeggbert/sprite-utils · 📏 ≈2.2k LOC
-
-* small C++23 sprite utility library and assets (number spritesheets, web component) supporting the game projects
-
----
-
-### 17. YouTube Frontend — static index generator for ArchiveBox
-
-🔗 https://github.com/openeggbert/youtube-frontend · 🌐 https://youtube.openeggbert.com · 📏 ≈2.3k LOC
-
-* C++23 tool that generates static HTML index pages for ArchiveBox video archives
-* uses OpenCV, FFmpeg libraries, and libcurl
-
----
-
-### 19. bit-backup — bit rot detection
-
-🔗 https://github.com/robertvokac/bit-backup · 📏 ≈3.1k LOC
-
-* command-line tool that detects silent data corruption via SHA-512 checksums stored in SQLite (C++23, OpenSSL)
-* parallel hashing, ignore patterns, rotating scrub verification, CSV reporting for cron integration
-
----
-
-### 20. Lexicon — desktop knowledge dictionary
+### 11. Lexicon — desktop knowledge dictionary
 
 🔗 https://github.com/robertvokac/lexicon · 🌐 https://lexicon.robertvokac.com · 📏 ≈2.8k LOC
 
