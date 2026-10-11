@@ -145,7 +145,6 @@ I built expertise through **real implementations**, including:
 * Web: https://robertvokac.com
 * GitHub: https://github.com/robertvokac
 * Org: https://github.com/libcna · https://libcna.com
-* Org: https://github.com/openeggbert · https://openeggbert.com
 * LinkedIn: https://cz.linkedin.com/in/robert-vok%C3%A1%C4%8D-081170381/
 * Location: Prague, Czech Republic
 
