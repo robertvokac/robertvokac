@@ -49,20 +49,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 2. Mesh Craft - 3D scene editor
-
-🔗 https://github.com/openeggbert/mesh-craft · 🌐 https://meshcraft3d.com · 🌐 https://meshcraft.openeggbert.com · 📏 ≈41.2k LOC
-
-* C++23 3D scene editor for the `.mc3.xml` format — primitive shapes, hierarchical groups, CSG (union/difference/intersection via Manifold), extrude-along-path, PBR materials, keyframe animation, prefabs
-* native `.mc3.xml` format: human-readable XML-based editable source compiled to glTF/GLB or binary MCB via `mc3togltf` / `mc3tomcb` CLI tools
-* Dear ImGui editor (orbit camera, gizmos, timeline, undo/redo, autosave) built on CNA + sharp-runtime; exercises the full C++ engine stack as a real editor application
-* Actively developed — full XML load/save roundtrip, all primitives, CSG, animation, and GLB export working
-
-➡️ Focus: **3D tooling, file formats, geometry processing, editor UX**
-
----
-
-### 3. CNA Samples - XNA sample collection ported to C++
+### 2. CNA Samples - XNA sample collection ported to C++
 
 🔗 https://github.com/openeggbert/cna-samples · 📏 ≈48.0k LOC
 
@@ -72,7 +59,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 4. Sharp Runtime - C#/.NET subset in native C++
+### 3. Sharp Runtime - C#/.NET subset in native C++
 
 🔗 https://github.com/openeggbert/sharp-runtime · 🌐 https://sharpruntime.openeggbert.com · 📏 ≈78.9k LOC
 
@@ -81,40 +68,11 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 * restructured into 39 independently selectable modules (41 CMake components)
 * foundation layer for CNA, Mesh Craft, and Galaxy Eggbert
 
----
-
-### 5. Free Eggbert - Speedy Eggbert 2 reconstruction
-
-🔗 https://github.com/openeggbert/free-eggbert · 🌐 https://freeeggbert.openeggbert.com · 🎮 [WebAssembly demo (partial)](https://speedyblupi.com/SpeedyEggbert2/) · 📏 ≈28.1k LOC
-
-* buildable reconstruction of the 1998–2001 game Speedy Eggbert 2, reverse-engineered from original binaries (Ghidra, IDA, ILSpy)
-* made portable beyond Windows/DirectX via Free API + Free Direct (SDL3)
-* Emscripten web build with IndexedDB save persistence
-
-➡️ Focus: **reverse engineering, game preservation**
+Assembly, and Android from a single C++ codebase
 
 ---
 
-### 6. Mobile Eggbert - C++ port of Speedy Blupi (2013)
-
-🔗 https://github.com/openeggbert/mobile-eggbert · 🌐 https://mobileeggbert.openeggbert.com · 🎮 [Play in browser](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈20.5k LOC
-
-* C++ port of the 2013 Windows Phone XNA game Speedy Blupi, running on CNA
-* migration chain: C# XNA 4.0 → ILSpy decompilation → MonoGame → native C++/CNA
-* playable on desktop and in the browser (IndexedDB saves); reference implementation for Galaxy Eggbert
-
----
-
-### 7. Galaxy Eggbert - 3D game (CNA)
-
-🔗 https://github.com/openeggbert/galaxy-eggbert · 🌐 https://galaxyeggbert.openeggbert.com · 📏 ≈18.5k LOC
-
-* 3D remake of Speedy Blupi validating the full CNA + Easy3D engine stack
-* targets Linux, Windows, WebAssembly, and Android from a single C++ codebase
-
----
-
-### 8. easy-gl - OpenGL/OpenGL ES rendering wrapper
+### 4. easy-gl - OpenGL/OpenGL ES rendering wrapper
 
 🔗 https://github.com/openeggbert/easy-gl · 🌐 https://easygl.openeggbert.com · 📏 ≈3.6k LOC
 
@@ -124,7 +82,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ---
 
-### 9. meta-gl - low-level OpenGL function loader
+### 5. meta-gl - low-level OpenGL function loader
 
 🔗 https://github.com/openeggbert/meta-gl · 🌐 https://metagl.openeggbert.com · 📏 ≈8.9k LOC
 
@@ -132,18 +90,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 * runtime loading via host-supplied `GetProcAddress` — no windowing, no context creation
 * `enum class` wrappers for all OpenGL constants; foundation layer for easy-gl
 
----
-
-### 10. Mobile Eggbert Legacy - ** C#/MonoGame preservation archive
-
-🔗 https://github.com/openeggbert/mobile-eggbert-legacy
-
-* preserved C#/MonoGame stage of the Mobile Eggbert migration
-* ILSpy-decompiled Windows Phone XNA 4.0 sources; related repositories merged via git subtree
-
----
-
-### 11. Lexicon - desktop knowledge dictionary
+### 6. Lexicon - desktop knowledge dictionary
 
 🔗 https://github.com/robertvokac/lexicon · 🌐 https://lexicon.robertvokac.com · 📏 ≈2.8k LOC
 
