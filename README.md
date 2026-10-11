@@ -133,7 +133,7 @@ I built expertise through **real implementations**, including:
 
 * C++20/23
 * Linux, CMake, Git, GCC / Clang
-* SDL3, OpenGL / OpenGL ES, bgfx, Dear ImGui
+* SDL3, OpenGL / OpenGL ES
 * SQLite
 * 3D tooling, cross-platform frameworks, compatibility layers, runtime systems, system architecture
 
