@@ -25,10 +25,10 @@ I design and implement **3D tools, C++ frameworks, platform abstraction layers, 
 * explicit API design
 * system behavior reproduction
 * modular architecture
-* cross-platform execution (Windows · Linux · WebAssembly · Android)
+* cross-platform execution (Windows · Linux · macOS · WebAssembly · Android · iOS)
 * long-term maintainability
 
-Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013) — playable web builds at [speedyblupi.com](https://speedyblupi.com). Ecosystem hub: [openeggbert.com](https://openeggbert.com).
+Validated on the collection of 91 XNA 4.0 samples - playable web builds at [samples.libcna.com](https://samples.libcna.com). Ecosystem hub: [libcna.com](https://libcna.com).
 
 ---
 
@@ -36,14 +36,14 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 1. CNA - C++ framework (XNA-style API)
 
-🔗 https://github.com/openeggbert/cna · 🌐 https://libcna.com · 🌐 https://cna.openeggbert.com · 🎮 [WebAssembly demo](https://speedyblupi.com/SpeedyBlupi2013/) · 📏 ≈292.2k LOC
+🔗 https://github.com/libcna/cna · 🌐 https://libcna.com · 🎮 [WebAssembly samples](https://samples.libcna.com) · 📏 ≈320k LOC
 
 * XNA-style API in native C++ under `Microsoft::Xna::Framework`
 * rendering, input, audio, resource lifecycle, backend abstraction
 * restructured into 15 independently buildable modules plus a renderer layer of ~40 backends, each with its own CMake target
-* 46 rendering backends spanning modern APIs (Vulkan, bgfx, WebGPU, native Direct3D 9/10/11/12, SDL_GPU, Metal, Diligent Engine, Sokol), the full legacy DirectX line (DirectX 1–9, Wine/DXVK-verified), desktop and mobile OpenGL/OpenGL ES/OpenVG, and specialty targets (HTML Canvas, SVG, GDI, Glide, headless)
-* one codebase targets Windows, Linux, WebAssembly, and Android
-* used to port a real C# / XNA game (Speedy Blupi, 2013)
+* 14 renders spanning modern APIs (Vulkan, WebGPU, native Direct3D 9/11, SDL_GPU, Metal),, desktop and mobile OpenGL/OpenGL ES, and specialty targets (headless)
+* one codebase targets Windows, Linux, macOS, WebAssembly, Android and iOS
+* used to port 91 real C# XNA 4.0 samples
 
 ➡️ Focus: **cross-platform framework, runtime systems, API compatibility**
 
@@ -51,7 +51,7 @@ Validated on real-world applications (Planet Blupi 1996, Speedy Blupi 2001/2013)
 
 ### 2. CNA Samples - XNA sample collection ported to C++
 
-🔗 https://github.com/openeggbert/cna-samples · 📏 ≈48.0k LOC
+🔗 https://github.com/libcna/cna-samples · 📏 ≈48.0k LOC
 
 * C++ ports of the official Microsoft XNA Game Studio 4.0 sample collection, running on CNA
 * a continuously growing compatibility test bed proving the framework's API coverage on real code
@@ -122,9 +122,7 @@ Since my previous work did not involve C++ directly,
 I built expertise through **real implementations**, including:
 
 * a 3D scene editor (Mesh Craft)
-* cross-platform C++ framework running real games (Windows / Linux / WebAssembly / Android)
-* DirectX 3 / WinAPI compatibility layers
-* backend platform (≈45k LOC)
+* cross-platform C++ framework running real games (Windows / Linux / macOS / WebAssembly / Android / iOS)
 * multiple reusable system libraries
 
 ---
